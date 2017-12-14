@@ -8,12 +8,12 @@
 
 </head>
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>-->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/ngCart/dist/ngCart.js"></script>
 
 <script src="rent.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
 <body ng-app="myApp">
 <div ng-controller="myCtrl">
@@ -24,6 +24,7 @@
             <h3>Summary <span>(ngcart-summary)</span></h3>
 
             <ngcart-summary></ngcart-summary>
+
         </div>
     </div>
     <hr />
@@ -58,31 +59,31 @@
 
     <hr/>
 
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
+    <div class="row">
+        <div class="col-md-12">
 
-            <!--<h3>Checkout <span> (ngcart-checkout)</span></h3>-->
-
-
-            <!--<div class="row">-->
-                <!--<div class="col-xs-4">-->
-                    <!--<h4>service 'log'</h4>-->
-                    <!--<ngcart-checkout service="log">Checkout</ngcart-checkout>-->
-                <!--</div>-->
-                <!--<div class="col-xs-4">-->
-                    <!--<h4>service 'http'</h4>-->
-                    <!--<ngcart-checkout service="http" settings="httpSettings">Checkout </ngcart-checkout>-->
-                <!--</div>-->
-                <!--<div class="col-xs-4">-->
-                    <!--<h4>service 'paypal'</h4>-->
-                    <!--<ngcart-checkout service="paypal" settings="payPalSettings"></ngcart-checkout>-->
-                <!--</div>-->
-            <!--</div>-->
+            <h3>Checkout <span> (ngcart-checkout)</span></h3>
 
 
+            <div class="row">
+                <div class="col-xs-4">
+                    <h4>service 'log'</h4>
+                    <ngcart-checkout service="log">Checkout</ngcart-checkout>
+                </div>
+                <div class="col-xs-4">
+                    <h4>service 'http'</h4>
+                    <ngcart-checkout service="http" settings="httpSettings">Checkout </ngcart-checkout>
+                </div>
+                <div class="col-xs-4">
+                    <h4>service 'paypal'</h4>
+                    <ngcart-checkout service="paypal" settings="payPalSettings"></ngcart-checkout>
+                </div>
+            </div>
 
-        <!--</div>-->
-    <!--</div>-->
+
+
+        </div>
+    </div>
 
 </div>
 
@@ -180,35 +181,35 @@
  </div>
 </script>
 
-<!--<script type="text/ng-template" id="template/ngCart/checkout.html">-->
+<script type="text/ng-template" id="template/ngCart/checkout.html">
 
-    <!--<div ng-if="service=='http' || service == 'log'">-->
-        <!--<button class="btn btn-primary" ng-click="checkout()" ng-disabled="!ngCart.getTotalItems()" ng-transclude>Checkout</button>-->
-    <!--</div>-->
+    <div ng-if="service=='http' || service == 'log'">
+        <button class="btn btn-primary" ng-click="checkout()" ng-disabled="!ngCart.getTotalItems()" ng-transclude>Checkout</button>
+    </div>
 
 
-    <!--<div ng-if="service=='paypal'">-->
+    <div ng-if="service=='paypal'">
 
-        <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" ng-show="ngCart.getTotalItems()">-->
-            <!--<input type="hidden" name="cmd" value="_xclick">-->
-            <!--<input type="hidden" name="business" value="{{ settings.paypal.business }}">-->
-            <!--<input type="hidden" name="lc" value="CA">-->
-            <!--<input type="hidden" name="item_name" value="{{ settings.paypal.item_name }}">-->
-            <!--<input type="hidden" name="item_number" value="{{ settings.paypal.item_number }}">-->
-            <!--<input type="hidden" name="amount" value="{{ ngCart.getSubTotal()}}">-->
-            <!--<input type="hidden" name="currency_code" value="{{ settings.paypal.currency_code }}">-->
-            <!--<input type="hidden" name="button_subtype" value="services">-->
-            <!--<input type="hidden" name="no_note" value="0">-->
-            <!--<input type="hidden" name="tax_rate" value="{{ ngCart.getTaxRate()}}">-->
-            <!--<input type="hidden" name="shipping" value="{{ ngCart.getShipping()}}">-->
-            <!--<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">-->
-            <!--<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
-            <!--<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
-        <!--</form>-->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" ng-show="ngCart.getTotalItems()">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="{{ settings.paypal.business }}">
+            <input type="hidden" name="lc" value="CA">
+            <input type="hidden" name="item_name" value="{{ settings.paypal.item_name }}">
+            <input type="hidden" name="item_number" value="{{ settings.paypal.item_number }}">
+            <input type="hidden" name="amount" value="{{ ngCart.getSubTotal()}}">
+            <input type="hidden" name="currency_code" value="{{ settings.paypal.currency_code }}">
+            <input type="hidden" name="button_subtype" value="services">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="tax_rate" value="{{ ngCart.getTaxRate()}}">
+            <input type="hidden" name="shipping" value="{{ ngCart.getShipping()}}">
+            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
 
-    <!--</div>-->
+    </div>
 
-<!--</script>-->
+</script>
 </body>
 
 </html>
