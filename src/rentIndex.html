@@ -4,19 +4,93 @@
     <meta charset="UTF-8">
     <title>Rent</title>
 
-    <link rel="stylesheet" type="text/css" href="cart.css">
-
+    <link rel="stylesheet" type="text/css" href="styles/cart.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.css">
+    <link rel="stylesheet" href="styles/owl.theme.css">
+    <link rel="stylesheet" href="styles/slit-slider-style.css">
+    <link rel="stylesheet" href="styles/slit-slider-custom.css">
+    <link rel="stylesheet" href="styles/idangerous.swiper.css">
+    <link rel="stylesheet" href="styles/yamm.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/prettyPhoto.css">
+    <link rel="stylesheet" href="styles/bootstrap-slider.css">
+    <link rel="stylesheet" href="styles/device-mockups2.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-responsive.css">
+    <link id="primary_color_scheme" rel="stylesheet" href="styles/theme_meadow.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/WebRupee/2.0/font.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <noscript>
+        <link rel="stylesheet" href="styles/styleNoJs.css">
+    </noscript>
+    <link href="../css/modern-business.css" rel="stylesheet">
 </head>
 
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/ngCart/dist/ngCart.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/ngCart/dist/ngCart.js"></script>
 
-<script src="rent.js"></script>
+<script src="scripts/rent.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
 <body ng-app="myApp">
 <div ng-controller="myCtrl">
+    <nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard" style="background-color:#3498db;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse"><i class="fa fa-align-                   justify fa-lg"></i></button>
+                <a href="#" class="navbar-brand"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+                <ul id="one-page-menu" role="menu" class="nav navbar-nav navbar-left">
+                    <li><a href="index.html" title="Home" data-ref="home">Home</a>
+                    </li>
+                    <li><a href="#about" title="About us" data-ref="about">About us</a>
+                    </li>
+                    <li><a href="rentIndex.html" title="Shop" data-ref="shop">Shop</a>
+                    </li>
+                    <li><a href="#blog" title="Blog" data-ref="blog">Reviews</a>
+                    </li>
+                    <li><a href="#contacts" title="Contacts" data-ref="contacts">Contacts</a>
+                    </li>
+                </ul>
+                <ul  class="nav navbar-nav navbar-right service-nav">
+
+                    <li> <a href="#" data-toggle="dropdown" class="upper dropdown-toggle">Share Cart <i class="fa fa-shopping-cart fa-lg"></i>&nbsp;<span class="badge">0</span></a></a>
+
+                        <div id="dropdownMenuCart" class="dropdown-menu widget-box">
+                            <div class="shopping_cart_dropdown">
+                                <ul class="cart_list product_list_widget">
+                                </ul>
+                                <div class="total">
+                                    <h6>Subtotal</h6><span> $ <span  style="color:#1abc9c;"></span>0.00</span>
+                                </div>
+                                <div class="action-button"><a href="shop-cart.html" class="btn btn-dark btn-bordered btn-xs upper">View Cart</a><a href="shop-checkout.html" class="btn btn-primary btn-xs upper">Checkout</a></div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div >
+        <ul >
+            <li>
+                <a ui-sref="site.cart" style="padding: 5px 0 0 0; width:150px">
+                    <ngcart-summary></ngcart-summary>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <div class="row">
 
@@ -108,9 +182,7 @@
     </div>
 
     <div class="table-responsive col-lg-12" ng-show="ngCart.getTotalItems() > 0">
-
         <table class="table table-striped ngCart cart">
-
             <thead>
             <tr>
                 <th></th>
