@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Electronics</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+	<script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+	.affix {
+			top: 0;
+			left:0;
+			width:100%;      
+		}
+
+		.affix + .container-fluid {
+			padding-top: 70px;
+		}
+
+		.navbar{
+			z-index: 2000;
+		}
+
+		#myNavbar .open .dropdown-toggle{
+			background-color: rgba(25, 0, 0, 0.5);
+		}		
+		
+		.dropdown-submenu {
+			position: relative;
+		}
+		
+		.dropdown-submenu > .dropdown-menu {
+			top: 0;
+			left: 100%;
+			margin-top: -6px;
+			margin-left: -1px;
+			-webkit-border-radius: 0 6px 6px 6px;
+			-moz-border-radius: 0 6px 6px;
+			border-radius: 0 6px 6px 6px;
+		}
+
+		.dropdown-submenu:hover > .dropdown-menu {
+			display: block;
+		}
+		
+		.dropdown-submenu > a:after {
+			display: block;
+			content: " ";
+			float: right;
+			width: 0;
+			height: 0;
+			border-color: transparent;
+			border-style: solid;
+			border-width: 5px 0 5px 5px;
+			border-left-color: #ccc;
+			margin-top: 5px;
+			margin-right: -10px;
+		}
+		
+		.navbar-right .dropdown-menu{
+			padding: 20px;
+		}
+
+		#formLogin input{
+			margin-bottom: 10px;
+		}
+
+		.checked {
+    color: orange;
+		}
+
+		 .jumbotron{
+     width:40%;
+     height:70%;
+
+     }
+	</style>
+</head>
+
+<body>
+
+	<!-- Navigation header -->
+
+<nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard" style="background-color:#3498db;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse"><i class="fa fa-align-                   justify fa-lg"></i></button>
+            <a href="#" class="navbar-brand"></a>
+        </div>
+
+       <!--  <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+            <ul id="one-page-menu" role="menu" class="nav navbar-nav navbar-left">
+                <li><a href="#home" title="Home" data-ref="home">Home</a>
+                </li>
+                <li><a href="#about" title="About us" data-ref="about">About us</a>
+                </li>
+                <li><a href="shop/" title="Shop" data-ref="shop">Shop</a>
+                </li>
+                <li><a href="#blog" title="Blog" data-ref="blog">Reviews</a>
+                </li>
+                <li><a href="#contacts" title="Contacts" data-ref="contacts">Contacts</a>
+                </li>
+            </ul> -->
+            <ul  class="nav navbar-nav navbar-right service-nav">
+
+                <li> <a href="#" data-toggle="dropdown" class="upper dropdown-toggle">Share Cart <i class="fa fa-shopping-cart fa-lg"></i>&nbsp;<span class="badge">0</span></a></a>
+
+                    <div id="dropdownMenuCart" class="dropdown-menu widget-box">
+                        <div class="shopping_cart_dropdown">
+                            <ul class="cart_list product_list_widget">
+                            </ul>
+                            <div class="total">
+                                <h6>Subtotal</h6><span> $ <span  style="color:#1abc9c;"></span>0.00</span>
+                            </div>
+                            <div class="action-button"><a href="shop-cart.html" class="btn btn-dark btn-bordered btn-xs upper">View Cart</a><a href="shop-checkout.html" class="btn btn-primary btn-xs upper">Checkout</a></div>
+                        </div>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+<!-- Navigation header ends-->
+</nav>
+
+	<div class="container" style="padding-top: 100px;">   
+		<div class="container">    
+			<div  class="row"> 
+				<!-- <div class="col-sm-6">
+					<img id="uni-logo" class="img-responsive" src="images/northeastern-university.png" alt="Logo">
+				</div> -->
+
+				 
+			</div>
+			
+
+		<div class="container">
+			<div class="row">
+				<div id="myCarousel" class="carousel slide jumbotron" data-ride="carousel">				
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
+					
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="images/sliderimage1.jpg" alt="Image1">
+						</div>
+						<div class="item">
+							<img src="images/sliderimage2.jpg" alt="Image2">
+						</div>
+						<div class="item">
+							<img src="images/sliderimage6.jpg" alt="Image2">
+						</div>
+						<div class="item">
+							<img src="images/sliderimage7.jpg" alt="Image2">
+						</div>
+					</div>
+					
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.8148632459593!2d-71.08639638479649!3d42.346470379187764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a1015e7a427%3A0x3c4bcfbe62b2c7d3!2sSheraton+Boston+Hotel!5e0!3m2!1sen!2sus!4v1513397277400" width="1000" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
+
+		<div class="page-header">
+			<h2>Save on Cars</h2>
+
+			<h2><span>&#36;</span>  50</h2>
+		</div>
+		<div class="container well">		
+			<div class="row">
+			<div class="col-xs-12 col-md-6 col-md-push-6">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" img src="images/sliderimage4.jpg" frameborder="10" allowfullscreen></iframe>		
+								</div>
+							</div>
+
+				<div class="col-xs-12 col-md-6 col-md-pull-6">
+					<p>
+						<ul>
+						
+					<li>Fire TV Edition is a smart TV experience that seamlessly integrates your favorite streaming and live over-the-air content on a unified home screen (HD antenna required).</li>
+					<li>Experience true-to-life 4K UHD picture quality with over 8 million pixels for stunning clarity, deep contrast, and brilliant colors on a direct-lit LED screen with minimal motion blur. </li>
+					<li>Refresh Rate: 60 Hz (Native), 120 Hz (Effective).</li>
+					<li>The Fire TV experience is built in so you can enjoy tens of thousands of channels, apps, and Alexa skills. Get universal search results across over 190 channels and apps including Netflix, Hulu, HBO NOW, SHOWTIME, STARZ, and Prime Video.</li>
+					</li>The included Voice Remote with Alexa allows you to control live TV playback, launch apps, search for TV shows, play music, switch inputs, control smart home devices, and much more.</li>
+					<li>Prime members get unlimited access to Prime Video including Thursday Night Football, thousands of movies, and TV episodes at no additional cost.</li>
+					<li>Dimensions (W x H x D): TV without stand: 57.4” x 33.3” x 3.5”, TV with stand: 57.4” x 35.2” x 11.8”</li>
+					<li>Multiple device input/output options: 4 HDMI 2.0 including 1 with ARC, 1 USB 2.0, 1 USB 3.0, SD card, Ethernet, composite/component, headphone, optical audio out.</li>
+						</ul>
+					</p>
+
+					<a href="https://www.youtube.com/watch?v=AFjDBJTaQkU">Watch demo video</a>
+					
+							<br><br>
+							<p>If you have a prime student account, Get FREE shipping and exclusive deals.<br>
+								For Prime Student Accounts <a href="https://www.youtube.com/watch?v=AFjDBJTaQkU">Click here!</a></p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="page-header">
+			<h2>Product Reviews</h2>
+		</div>
+		<div class="container well">		
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus 		neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.<br><br>
+						Posted by Anonymous on 3/1/17 </p>
+							<br><br>
+
+							<h2>Product Rating</h2>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+
+
+							
+								Feedbacks are appreciated! <a href="mailto:admin-isa@rentalsite.com">Mail us</a></p>
+							</div>
+
+							<div class="hidden-xs hidden-sm col-sm-6">
+								<img class="img-responsive" src="images/sliderimage3.jpg">
+						</div>
+						</div>
+					</div>
+			
+
+
+			<div class="row"> 
+				<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="70"> 
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>                   
+					</div>
+
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>							
+							<li><a class="dropdown-toggle" href="#" data-toggle="dropdown">Co-curricular <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Events</a></li>
+									<li role="separator" class="divider"></li>
+									<li class="dropdown-submenu">
+										<a href="#">Clubs</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Sports</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#">Fashion</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#">Outdoor adventure</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">New Student</a></li>
+							<li><a href="#">Your Travel Plan</a></li>
+							<li><a href="#">About Us</a></li>
+						</ul>
+						
+						
+						
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+									<span class="glyphicon glyphicon-log-in"></span> Login
+									<span class="caret"></span>
+								</a>
+								<div class="dropdown-menu">
+									<form class="form" id="formLogin"> 
+										<input name="username" id="username" type="text" placeholder="Username"> 
+										<input name="password" id="password" type="password" placeholder="Password"><br>
+										<button type="button" id="btnLogin" class="btn btn-primary">Login</button>
+									</form>
+								</div>							
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 text-center">		
+								<p>&copy; RentBingo</p>
+
+							</div>
+						</div>
+					</div>
+				</footer>
+
+
+			</body>
+			</html>

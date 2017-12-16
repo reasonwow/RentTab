@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content=""> -->
+
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/owl.carousel.css">
+    <link rel="stylesheet" href="styles/owl.theme.css">
+    <link rel="stylesheet" href="styles/slit-slider-style.css">
+    <link rel="stylesheet" href="styles/slit-slider-custom.css">
+    <link rel="stylesheet" href="styles/idangerous.swiper.css">
+    <link rel="stylesheet" href="styles/yamm.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/prettyPhoto.css">
+    <link rel="stylesheet" href="styles/bootstrap-slider.css">
+    <link rel="stylesheet" href="styles/device-mockups2.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-responsive.css">
+    <link id="primary_color_scheme" rel="stylesheet" href="styles/theme_meadow.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/WebRupee/2.0/font.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <noscript>
+        <link rel="stylesheet" href="styles/styleNoJs.css">
+    </noscript>
+
+    <title>Product1</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="../css/modern-business.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <!--<script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        .affix {
+            top: 0;
+            left:0;
+            width:100%;
+        }
+
+        .affix + .container-fluid {
+            padding-top: 70px;
+        }
+
+        .navbar{
+            z-index: 2000;
+        }
+
+        #myNavbar .open .dropdown-toggle{
+            background-color: rgba(25, 0, 0, 0.5);
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu > .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+            margin-left: -1px;
+            -webkit-border-radius: 0 6px 6px 6px;
+            -moz-border-radius: 0 6px 6px;
+            border-radius: 0 6px 6px 6px;
+        }
+
+        .dropdown-submenu:hover > .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-submenu > a:after {
+            display: block;
+            content: " ";
+            float: right;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 5px 0 5px 5px;
+            border-left-color: #ccc;
+            margin-top: 5px;
+            margin-right: -10px;
+        }
+
+        .navbar-right .dropdown-menu{
+            padding: 20px;
+        }
+
+        #formLogin input{
+            margin-bottom: 10px;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .jumbotron{
+            width:50%;
+            height:50%;
+
+        }
+    </style>
+</head>
+
+
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/ngCart/dist/ngCart.js"></script>
+
+<script src="scripts/rent.js"></script>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+<body ng-app="myApp">
+
+<!-- Navigation -->
+
+<nav id="main-navigation1" role="navigation" class="navbar navbar-fixed-top navbar-standard" style="background-color:#3498db;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse"><i class="fa fa-align-                   justify fa-lg"></i></button>
+            <a href="#" class="navbar-brand"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu-navbar-collapse1">
+            <ul id="one-page-menu1" role="menu" class="nav navbar-nav navbar-left">
+                <li><a href="index.html" title="Home" data-ref="home">Home</a>
+                </li>
+                <li><a href="#about" title="About us" data-ref="about">About us</a>
+                </li>
+                <li><a href="shopTab.html" title="Shop" data-ref="shop">Shop</a>
+                </li>
+                <li><a href="#blog" title="Blog" data-ref="blog">Reviews</a>
+                </li>
+                <li><a href="contact.html" title="Contacts" data-ref="contacts">Contacts</a>
+                </li>
+            </ul>
+            <ul  class="nav navbar-nav navbar-right service-nav">
+                <li> <a href="#" data-toggle="dropdown" class="upper dropdown-toggle">Share Cart <i class="fa fa-shopping-cart fa-lg"></i>&nbsp;</a></a>
+                    <div id="dropdownMenuCart1" class="dropdown-menu widget-box">
+                        <div class="shopping_cart_dropdown">
+                            <ul class="cart_list product_list_widget">
+                            </ul>
+                            <div class="total">
+                                <h6>Subtotal</h6><span style="color:#1abc9c; font-size: medium"><ngcart-summary></ngcart-summary></span>
+                            </div>
+                            <div class="action-button"><a href="viewCart.html" class="btn btn-dark btn-bordered btn-xs upper">View Cart</a><a href="shop-checkout.html" class="btn btn-primary btn-xs upper">Checkout</a></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+<!-- Start Header Section-->
+
+<!-- Page Content -->
+
+<!--<nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard" style="background-color:#3498db;">-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navbar-collapse"><i class="fa fa-align-                   justify fa-lg"></i></button>-->
+            <!--<a href="#" class="navbar-brand"></a>-->
+        <!--</div>-->
+
+        <!--<div class="collapse navbar-collapse" id="menu-navbar-collapse">-->
+            <!--<ul id="one-page-menu" role="menu" class="nav navbar-nav navbar-left">-->
+                <!--<li><a href="#home" title="Home" data-ref="home">Home</a>-->
+                <!--</li>-->
+                <!--<li><a href="#about" title="About us" data-ref="about">About us</a>-->
+                <!--</li>-->
+                <!--<li><a href="shop/" title="Shop" data-ref="shop">Shop</a>-->
+                <!--</li>-->
+                <!--<li><a href="#blog" title="Blog" data-ref="blog">Reviews</a>-->
+                <!--</li>-->
+                <!--<li><a href="#contacts" title="Contacts" data-ref="contacts">Contacts</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<ul  class="nav navbar-nav navbar-right service-nav">-->
+
+                <!--<li> <a href="#" data-toggle="dropdown" class="upper dropdown-toggle">Share Cart <i class="fa fa-shopping-cart fa-lg"></i>&nbsp;<span class="badge">0</span></a></a>-->
+
+                    <!--<div id="dropdownMenuCart" class="dropdown-menu widget-box">-->
+                        <!--<div class="shopping_cart_dropdown">-->
+                            <!--<ul class="cart_list product_list_widget">-->
+                            <!--</ul>-->
+                            <!--<div class="total">-->
+                                <!--<h6>Subtotal</h6><span> $ <span  style="color:#1abc9c;"></span>0.00</span>-->
+                            <!--</div>-->
+                            <!--<div class="action-button"><a href="shop-cart.html" class="btn btn-dark btn-bordered btn-xs upper">View Cart</a><a href="shop-checkout.html" class="btn btn-primary btn-xs upper">Checkout</a></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</li>-->
+
+            <!--</ul>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; Navigation header ends&ndash;&gt;-->
+<!--</nav>-->
+
+<div class="container" style="padding-top: 100px;">
+    <div class="container">
+        <div  class="row">
+            <!-- <div class="col-sm-6">
+                <img id="uni-logo" class="img-responsive" src="images/northeastern-university.png" alt="Logo">
+            </div> -->
+
+
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div id="myCarousel" class="carousel slide jumbotron" data-ride="carousel" style="min-height: 280px; max-height: 100%">
+                    <ol class="carousel-indicators" >
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/sliderimage1.jpg" alt="Image1">
+                        </div>
+                        <div class="item">
+                            <img src="images/sliderimage2.jpg" alt="Image2">
+                        </div>
+                        <div class="item">
+                            <img src="images/sliderimage30.jpg" alt="Image2">
+                        </div>
+                        <div class="item">
+                            <img src="images/sliderimage40.jpg" alt="Image2">
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-header">
+            <h2>Element 65-Inch 4K Ultra HD Smart LED TV - Fire TV Edition</h2>
+
+            <h2><span>&#36;</span>  200</h2>
+            <ngcart-addtocart id="item1" name="My Item #1" price="200.00" quantity="1" quantity-max="5">Add to Cart</ngcart-addtocart>
+        </div>
+        <div class="container well">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-md-push-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" img src="images/sliderimage4.jpg" frameborder="10" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-md-pull-6">
+                    <p>
+                    <ul>
+
+                        <li>Fire TV Edition is a smart TV experience that seamlessly integrates your favorite streaming and live over-the-air content on a unified home screen (HD antenna required).</li>
+                        <li>Experience true-to-life 4K UHD picture quality with over 8 million pixels for stunning clarity, deep contrast, and brilliant colors on a direct-lit LED screen with minimal motion blur. </li>
+                        <li>Refresh Rate: 60 Hz (Native), 120 Hz (Effective).</li>
+                        <li>The Fire TV experience is built in so you can enjoy tens of thousands of channels, apps, and Alexa skills. Get universal search results across over 190 channels and apps including Netflix, Hulu, HBO NOW, SHOWTIME, STARZ, and Prime Video.</li>
+                        </li>The included Voice Remote with Alexa allows you to control live TV playback, launch apps, search for TV shows, play music, switch inputs, control smart home devices, and much more.</li>
+                        <li>Prime members get unlimited access to Prime Video including Thursday Night Football, thousands of movies, and TV episodes at no additional cost.</li>
+                        <li>Dimensions (W x H x D): TV without stand: 57.4” x 33.3” x 3.5”, TV with stand: 57.4” x 35.2” x 11.8”</li>
+                        <li>Multiple device input/output options: 4 HDMI 2.0 including 1 with ARC, 1 USB 2.0, 1 USB 3.0, SD card, Ethernet, composite/component, headphone, optical audio out.</li>
+                    </ul>
+                    </p>
+
+                    <a href="https://www.youtube.com/watch?v=AFjDBJTaQkU">Watch demo video</a>
+
+                    <br><br>
+                    <p>If you have a prime student account, Get FREE shipping and exclusive deals.<br>
+                        For Prime Student Accounts <a href="https://www.youtube.com/watch?v=AFjDBJTaQkU">Click here!</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page-header">
+            <h2>Product Reviews</h2>
+        </div>
+        <div class="container well">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus 		neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.<br><br>
+                        Posted by Anonymous on 3/1/17 </p>
+                    <br><br>
+
+                    <h2>Product Rating</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+
+
+                    Feedbacks are appreciated! <a href="mailto:admin-isa@rentalsite.com">Mail us</a></p>
+                </div>
+
+                <div class="hidden-xs hidden-sm col-sm-6">
+                    <img class="img-responsive" src="images/sliderimage3.jpg">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--<div class="row">-->
+            <!--<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="70">-->
+                <!--<div class="navbar-header">-->
+                    <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+                        <!--<span class="icon-bar"></span>-->
+                        <!--<span class="icon-bar"></span>-->
+                        <!--<span class="icon-bar"></span>-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</nav>-->
+        <!--</div>-->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p>&copy; RentBingo</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<!-- Start Contact section-->
+<section id="contacts" class="sep-top-3x sep-bottom-3x" style="padding-top: 0in">
+    <div ng-controller="myCtrl">
+
+        <hr/>
+
+        <div class="row" ng-show="false">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <!--<h4>service 'log'</h4>-->
+                        <!--<ngcart-checkout service="log">Checkout</ngcart-checkout>-->
+                    </div>
+                    <div class="col-xs-4">
+                        <!--<h4>service 'http'</h4>-->
+                        <!--<ngcart-checkout service="http" settings="httpSettings">Checkout </ngcart-checkout>-->
+                    </div>
+                    <div class="col-xs-4">
+                        <!--<h4>service 'paypal'</h4>-->
+                        <ngcart-checkout service="paypal" settings="payPalSettings"></ngcart-checkout>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Contact section-->
+
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<!-- <script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/popper/popper.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script> -->
+
+<script src="scripts/vendor/jquery.js"></script>
+<script src="scripts/vendor/queryloader2.min.js"></script>
+<script src="scripts/vendor/owl.carousel.js"></script>
+<script src="scripts/vendor/jquery.ba-cond.min.js"></script>
+<script src="scripts/vendor/jquery.slitslider.js"></script>
+<script src="scripts/vendor/idangerous.swiper.js"></script>
+<script src="scripts/vendor/jquery.fitvids.js"></script>
+<script src="scripts/vendor/jquery.countTo.js"></script>
+<script src="scripts/vendor/TweenMax.min.js"></script>
+<script src="scripts/vendor/ScrollToPlugin.min.js"></script>
+<script src="scripts/vendor/jquery.scrollmagic.min.js"></script>
+<script src="scripts/vendor/jquery.easypiechart.js"></script>
+<script src="scripts/vendor/jquery.validate.js"></script>
+<script src="scripts/vendor/wow.min.js"></script>
+<script src="scripts/vendor/jquery.placeholder.js"></script>
+<script src="scripts/vendor/jquery.easing.1.3.min.js"></script>
+<script src="scripts/vendor/jquery.waitforimages.min.js"></script>
+<script src="scripts/vendor/jquery.prettyPhoto.js"></script>
+<script src="scripts/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="scripts/vendor/isotope.pkgd.min.js"></script>
+<script src="scripts/vendor/jquery.fillparent.min.js"></script>
+<script src="scripts/vendor/raphael-min.js"></script>
+<script src="scripts/vendor/bootstrap.js"></script>
+<script src="scripts/vendor/jquery.bootstrap-touchspin.min.js"></script>
+<script src="scripts/vendor/bootstrap-slider.js"></script>
+<script src="scripts/vendor/bootstrap-rating-input.js"></script>
+<script src="scripts/vendor/bootstrap-hover-dropdown.min.js"></script>
+<script src="scripts/jquery.gmap.min.js"></script>
+<script src="scripts/circle_diagram.js"></script>
+<script src="scripts/main.js"></script>
+
+
+<script type="text/ng-template" id="template/ngCart/summary.html"> <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">{{ ngCart.getTotalItems() }}
+        <ng-pluralize count="ngCart.getTotalItems()" when="{1: 'item', 'other':'items'}"></ng-pluralize>
+        <br />
+        <span style="color: red"> {{ ngCart.totalCost() | currency }}</span>
+    </div>
+</div>
+</script>
+
+
+<script type="text/ng-template" id="template/ngCart/cart.html">
+    <div class="alert alert-warning" role="alert" ng-show="ngCart.getTotalItems() === 0">
+        Your cart is empty
+    </div>
+
+    <div class="table-responsive col-lg-12" ng-show="ngCart.getTotalItems() > 0">
+
+        <table class="table table-striped ngCart cart">
+
+            <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Quantity</th>
+                <th>Amount</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr ng-show="ngCart.getTax()">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Tax ({{ ngCart.getTaxRate() }}%):</td>
+                <td>{{ ngCart.getTax() | currency }}</td>
+            </tr>
+            <tr ng-show="ngCart.getShipping()">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Shipping:</td>
+                <td>{{ ngCart.getShipping() | currency }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total:</td>
+                <td>{{ ngCart.totalCost() | currency }}</td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr ng-repeat="item in ngCart.getCart().items track by $index">
+                <td><span ng-click="ngCart.removeItemById(item.getId())" class="glyphicon glyphicon-remove"></span></td>
+
+                <td>{{ item.getName() }}</td>
+                <td><span class="glyphicon glyphicon-minus" ng-class="{'disabled':item.getQuantity()==1}"
+                          ng-click="item.setQuantity(-1, true)"></span>&nbsp;&nbsp;
+                    {{ item.getQuantity() | number }}&nbsp;&nbsp;
+                    <span class="glyphicon glyphicon-plus" ng-click="item.setQuantity(1, true)"></span></td>
+                <td>{{ item.getPrice() | currency}}</td>
+                <td>{{ item.getTotal() | currency }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</script>
+
+<script type="text/ng-template" id="template/ngCart/addtocart.html"> <div ng-hide="attrs.id">
+    <a class="btn btn-lg btn-primary" ng-disabled="true" ng-transclude></a>
+
+</div>
+<div ng-show="attrs.id">
+    <div>
+        <span ng-show="quantityMax">
+            <select name="quantity" id="quantity" ng-model="q"
+                    ng-options="v for v in qtyOpt"></select>
+        </span>
+        <a class="btn btn-sm btn-primary"
+           ng-click="ngCart.addItem(id, name, price, q, data)"
+           ng-transclude></a>
+    </div>
+    <mark  ng-show="inCart()">
+        This item is in your cart. <a ng-click="ngCart.removeItemById(id)" style="cursor: pointer;">Remove</a>
+    </mark>
+</div>
+</script>
+
+<script type="text/ng-template" id="template/ngCart/checkout.html">
+
+    <div ng-if="service=='http' || service == 'log'">
+        <button class="btn btn-primary" ng-click="checkout()" ng-disabled="!ngCart.getTotalItems()" ng-transclude>Checkout</button>
+    </div>
+    <div ng-if="service=='paypal'">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" ng-show="ngCart.getTotalItems()">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="{{ settings.paypal.business }}">
+            <input type="hidden" name="lc" value="CA">
+            <input type="hidden" name="item_name" value="{{ settings.paypal.item_name }}">
+            <input type="hidden" name="item_number" value="{{ settings.paypal.item_number }}">
+            <input type="hidden" name="amount" value="{{ ngCart.getSubTotal()}}">
+            <input type="hidden" name="currency_code" value="{{ settings.paypal.currency_code }}">
+            <input type="hidden" name="button_subtype" value="services">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="tax_rate" value="{{ ngCart.getTaxRate()}}">
+            <input type="hidden" name="shipping" value="{{ ngCart.getShipping()}}">
+            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+    </div>
+
+</script>
+
+</body>
+
+</html>
